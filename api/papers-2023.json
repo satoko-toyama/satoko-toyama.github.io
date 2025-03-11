@@ -1,15 +1,15 @@
 [
   {
-    "id": "paper-1",
-    "title": "Your Paper Title 1",
-    "titleJa": "あなたの論文タイトル1",
-    "authors": "Author 1, Author 2",
-    "authorsJa": "著者1, 著者2",
-    "journal": "Journal Name",
-    "journalJa": "ジャーナル名",
+    "id": "44289473",
+    "title": "Real-space observation of a two-dimensional electron gas at semiconductor heterointerfaces",
+    "titleJa": "Real-space observation of a two-dimensional electron gas at semiconductor heterointerfaces",
+    "authors": "Satoko Toyama,Takehito Seki,Yuya Kanitani,Yoshihiro Kudo,Shigetaka Tomiya,Yuichi Ikuhara,Naoya Shibata",
+    "authorsJa": "Satoko Toyama,Takehito Seki,Yuya Kanitani,Yoshihiro Kudo,Shigetaka Tomiya,Yuichi Ikuhara,Naoya Shibata",
+    "journal": "Nature Nanotechnology",
+    "journalJa": "Nature Nanotechnology",
     "year": "2023",
-    "month": "01",
-    "doi": "10.1234/abcd",
-    "isMainWork": false
+    "month": "05",
+    "doi": "10.1038/s41565-023-01349-8",
+    "isMainWork": true
   }
 ]

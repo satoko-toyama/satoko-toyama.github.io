@@ -1,15 +1,28 @@
 [
   {
-    "id": "paper-2",
-    "title": "Your Paper Title 2",
-    "titleJa": "Your Paper Title 2",
-    "authors": "Author 1, Author 2",
-    "authorsJa": "著者1, 著者2",
-    "journal": "Journal Name",
-    "journalJa": "ジャーナル名",
+    "id": "44289485",
+    "title": "Linear imaging theory for differential phase contrast and other phase imaging modes in scanning transmission electron microscopy",
+    "titleJa": "Linear imaging theory for differential phase contrast and other phase imaging modes in scanning transmission electron microscopy",
+    "authors": "Takehito Seki,Kushagra Khare,Yoshiki O. Murakami,Satoko Toyama,Gabriel Sánchez-Santolino,Hirokazu Sasaki,Scott D. Findlay,Timothy C. Petersen,Yuichi Ikuhara,Naoya Shibata",
+    "authorsJa": "Takehito Seki,Kushagra Khare,Yoshiki O. Murakami,Satoko Toyama,Gabriel Sánchez-Santolino,Hirokazu Sasaki,Scott D. Findlay,Timothy C. Petersen,Yuichi Ikuhara,Naoya Shibata",
+    "journal": "Ultramicroscopy",
+    "journalJa": "Ultramicroscopy",
     "year": "2022",
-    "month": "12",
-    "doi": "10.1234/abcd",
+    "month": "10",
+    "doi": "10.1016/j.ultramic.2022.113580",
+    "isMainWork": false
+  },
+  {
+    "id": "44289472",
+    "title": "Quantitative electric field mapping in semiconductor heterostructures via tilt-scan averaged DPC STEM",
+    "titleJa": "Quantitative electric field mapping in semiconductor heterostructures via tilt-scan averaged DPC STEM",
+    "authors": "Satoko Toyama,Takehito Seki,Yuya Kanitani,Yoshihiro Kudo,Shigetaka Tomiya,Yuichi Ikuhara,Naoya Shibata",
+    "authorsJa": "Satoko Toyama,Takehito Seki,Yuya Kanitani,Yoshihiro Kudo,Shigetaka Tomiya,Yuichi Ikuhara,Naoya Shibata",
+    "journal": "Ultramicroscopy",
+    "journalJa": "Ultramicroscopy",
+    "year": "2022",
+    "month": "08",
+    "doi": "10.1016/j.ultramic.2022.113538",
     "isMainWork": true
   }
 ]

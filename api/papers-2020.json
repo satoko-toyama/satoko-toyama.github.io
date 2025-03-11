@@ -1,15 +1,15 @@
 [
   {
-    "id": "paper-5",
-    "title": "Your Paper Title 5",
-    "titleJa": "Your Paper Title 5",
-    "authors": "著者1, 著者2",
-    "authorsJa": "著者1, 著者2",
-    "journal": "ジャーナル名",
-    "journalJa": "ジャーナル名",
+    "id": "44289471",
+    "title": "Quantitative electric field mapping of a p–n junction by DPC STEM",
+    "titleJa": "Quantitative electric field mapping of a p–n junction by DPC STEM",
+    "authors": "Satoko Toyama,Takehito Seki,Satoshi Anada,Hirokazu Sasaki,Kazuo Yamamoto,Yuichi Ikuhara,Naoya Shibata",
+    "authorsJa": "Satoko Toyama,Takehito Seki,Satoshi Anada,Hirokazu Sasaki,Kazuo Yamamoto,Yuichi Ikuhara,Naoya Shibata",
+    "journal": "Ultramicroscopy",
+    "journalJa": "Ultramicroscopy",
     "year": "2020",
-    "month": "01",
-    "doi": "10.1234/abcd",
+    "month": "09",
+    "doi": "10.1016/j.ultramic.2020.113033",
     "isMainWork": true
   }
 ]
