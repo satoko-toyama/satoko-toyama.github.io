@@ -52,15 +52,15 @@
 フォークしたリポジトリの基本設定を変更します。
 
 1. フォークしたリポジトリのページで「Settings」タブをクリックします
-2. 左のタブの「GitHub Pages」セクションを見つけます
-3. ソースとして「GitHub Actions」を選択します（デプロイワークフローを使用するため）
+2. 左のタブの「COde and automation」→「GitHub Pages」セクションを見つけます
+3. Sourceセクションで「GitHub Actions」を選択します（デプロイワークフローを使用するため）
 
 > **注意**: もしデプロイワークフローがない場合は、後の手順でセットアップします。
 
 ### 1. GitHub Actions の書き込み権限を付与する
 まず、デプロイワークフローが gh-pages ブランチに書き込みできるよう権限を設定します：
 
-1. リポジトリのページで「Settings」タブをクリックします
+1. フォークしたリポジトリのページで「Settings」タブをクリックします
 2. 左側のメニューから「Actions」→「General」をクリックします
 3. 「Workflow permissions」セクションまでスクロールします
 4. 「Read and write permissions」オプションを選択します
@@ -72,8 +72,8 @@
 
 ### 英語の設定ファイル編集
 
-1. フォークしたリポジトリで、`public/locales/en/translations.json`ファイルを開きます
-2. 「Edit this file」（ペンのアイコン）をクリックします
+1. フォークしたリポジトリで、`Code`タブから`public/locales/en/translations.json`ファイルを開きます
+2. 右上の「Edit this file」（ペンのアイコン）をクリックします
 3. 以下のセクションを自分の情報に書き換えます：
    - `header.name`: ヘッダーに表示される名前
    - `bio.name`: 英語の名前
@@ -88,8 +88,9 @@
    - `contact.phoneNumber`: 電話番号
    - `contact.addressLine1`, `contact.addressLine2`, `contact.addressLine3`: 住所の各行
    - `contact.linkedin`, `contact.facebook`, `contact.twitter`: 各種ソーシャルメディアのリンク（ない場合`""`を設定）
-4. 「Commit changes...」ボタンをクリックして変更を保存します
+4. 「Commit changes...」ボタン（緑）をクリックして変更を保存します
 5. コミットメッセージを入力（例：「Update English profile information」）して「Commit changes」をクリックします
+   （`main` branchへのCommitを選択してください）  
 
 > **ヒント**: 不要な項目は`""`のように空文字を設定するか`null`を記入してください。
 > **ヒント**: ページ下部のソーシャルメディアを削除したい場合は`contact.socialMedia`を`""`にすると消えます。
@@ -310,7 +311,7 @@
 
 index.htmlファイル内のSEOやGoogle Search Consoleの情報をカスタマイズします。
 
-1. フォークしたリポジトリの`public/index.html`ファイルを開きます
+1. フォークしたリポジトリのホームにある`index.html`ファイルを開きます
 2. 以下の情報をあなたのGitHubユーザー名や氏名に置き換えます：
    - `<title>`タグ内の内容をあなたの名前に変更します
    - `<meta name="description">`の`content`属性をあなたの研究内容に合わせて編集します

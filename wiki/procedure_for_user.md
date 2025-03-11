@@ -8,6 +8,7 @@ This guide explains the process of forking an academic website template, replaci
 
 - [Academic Website Template User Guide](#academic-website-template-user-guide)
   - [Table of Contents](#table-of-contents)
+  - [0. Overview](#0-overview)
   - [1. Fork the repository on GitHub](#1-fork-the-repository-on-github)
   - [2. Change repository settings](#2-change-repository-settings)
     - [1. Grant write permissions to GitHub Actions](#1-grant-write-permissions-to-github-actions)
@@ -36,16 +37,22 @@ This guide explains the process of forking an academic website template, replaci
     - [Other issues](#other-issues)
   - [Extended Customization](#extended-customization)
 
+## 0. Overview
+
+- Step 1-2: Fork the repository to your own GitHub account and make the basic settings.
+- Step 3-7: Write your information.
+- Step 8-9: Publish on GitHub pages using the script.
+
 ## 1. Fork the repository on GitHub
 
 First, fork the template repository to your GitHub account.
 
 1. Go to the template repository page (https://github.com/sigma-users/personal-website-template)
 2. Click the "Fork" button in the top right
-3. Change the repository name if needed (e.g., `yourusername.github.io`)
+3. The repository name must be changed to your user name (`yourusername.github.io`)
 4. Click the "Create Fork" button to complete the process
 
-> **Tip**: If you want to publish it as a user site, naming the repository `yourgithubusername.github.io` is recommended.
+> **Tip**: If you want to publish it as a user site, you must name the repository `yourgithubusername.github.io` .
 
 ## 2. Change repository settings
 
@@ -53,7 +60,8 @@ Change the basic settings of your forked repository.
 
 1. Click the "Settings" tab on the page of the forked repository.
 2. Find the "GitHub Pages" section in the left-hand menu.
-3. Select "GitHub Actions" as the source (to use the deployment workflow).
+3. Select "Deploy from a branch" as the source (to use the deployment workflow).  
+   Set the branch as `gh-pages` and `/(root)`.
 
 > **Note**: If there is no deployment workflow, you will set it up in a later step.
 
@@ -317,19 +325,21 @@ Customize the SEO and Google Search Console information in the index.html file.
 > **Tip**: Proper SEO configuration improves how your site appears in search engines.
 
 ## 9. Publish on GitHub Pages
-
+After a "push" action, the GitHub page is generated.  
 Publish your site on GitHub Pages.
 
-1. Click the "Actions" tab in your forked repository
-2. Find and select the "Deploy to GitHub Pages" workflow
+1. Perform a "push" in arbitrary page (ex. edit and add space in `/content/bio/bio_en.md`, and "Commit changes...").  
+2. Click the "Actions" tab in your forked repository
+3. Find and select the "Deploy to GitHub Pages" workflow
    - If the workflow is already running or completed, check its results
    - If you cannot find the workflow, create the workflow file with these steps:
      a. Open the ".github/workflows" directory
      b. Check if there is a "deploy.yml" file
      c. If not, create a new one and copy the content from the same file in the template repository
-3. After the workflow succeeds, check the published URL in "Settings" → "Pages"
+4. After the workflow succeeds, check the published URL in "Settings" → "Pages"
 
-> **Tip**: The initial deployment may take a few minutes. Please be patient.
+> **Tip**: The initial deployment may take a few minutes. Please be patient.  
+> **Tip**: To check your revision in your page, please use the shortcut `ctrl` + `shift` + `R`.  
 
 ### Re-run the deployment workflow
 If needed, re-run the workflow with these steps:
