@@ -1,9 +1,8 @@
-awards
-ID,賞名(日本語),賞名(英語),タイトル(日本語),タイトル(英語),授与機関(日本語),授与機関(英語),受賞年月,主要な業績かどうか
-example-id,賞名,"Example Award Name",タイトル,"Example Title",授与機関,"Example Awarder",2025-03,false
-49341459,青葉研究奨励賞,"Aoba Research Encouragement Prize",null,null,青葉研究奨励会,"Aoba Research Foundation",2025-03,false
-48550881,"Institutional Participant in the Rising Stars Women in Science Workshop",null,null,null,null,null,2024-11,false
-46398327,理学系研究科研究科長賞（研究最優秀）,"Dean's Award (Excellence in Research)",null,null,京都大学,"Kyoto University",2023-03,false
-46398303,日本生物学会第64回シンポジウム最優秀ポスター賞,null,null,null,日本生物学会,null,2021-11,false
-46398299,日本化学学会・物理学会奨学賞,null,null,null,"日本化学学会 物理学会",null,2018-03,false
-46398295,理学部長賞,"Dean's Award",null,null,京都大学,"Kyoto University",2018-03,false
+﻿awards
+アクション名,アクションタイプ,類似業績マージ優先度,ID,賞名(日本語),賞名(英語),受賞者・グループ(日本語),受賞者・グループ(英語),タイトル(日本語),タイトル(英語),授与機関(日本語),授与機関(英語),概要(日本語),概要(英語),受賞年月,受賞区分,受賞国・地域,URL,主要な業績かどうか,公開の有無
+insert,merge,null,49341459,風戸研究奨励賞,"Kazato Research Encouragement Prize",null,null,null,null,風戸研究奨励会,"Kazato Research Foundation",null,null,2025-03,null,null,null,false,disclosed
+insert,merge,null,48550881,"Institutional Participant in the Rising Stars Women in Engineering Workshop",null,null,null,null,null,null,null,null,null,2024-11,null,null,null,false,disclosed
+insert,merge,null,46398327,工学系研究科研究科長賞（研究最優秀）,"Dean's Award (Research)",null,null,null,null,東京大学,"The University of Tokyo",null,null,2023-03,null,null,null,false,disclosed
+insert,merge,null,46398303,日本顕微鏡学会第64回シンポジウム最優秀ポスター賞,null,null,null,null,null,日本顕微鏡学会,null,null,null,2021-11,null,null,null,false,disclosed
+insert,merge,null,46398299,日本金属学会・鉄鋼協会奨学賞,null,null,null,null,null,"日本金属学会 鉄鋼協会",null,null,null,2018-03,null,null,null,false,disclosed
+insert,merge,null,46398295,工学部長賞,"Dean's Award",null,null,null,null,東京大学,"The University of Tokyo",null,null,2018-03,null,null,null,false,disclosed
