@@ -1,6 +1,6 @@
 {
   "header": {
-    "name": "Your Name"
+    "name": "Satoko Toyama"
   },
   "nav": {
     "bio": "About",
@@ -10,20 +10,22 @@
     "contact": "Contact"
   },
   "bio": {
-    "name": "Your Name",
-    "nameJp": "あなたの名前",
-    "phd": "",
+    "name": "Satoko Toyama",
+    "nameJp": "遠山　慧子",
+    "phd": "Ph.D.",
     "phdJp": "博士（工学）",
-    "position": "Postdoctoral Researcher",
+    "position": "Assistant Professor",
     "affiliation": "Institute of Engineering Innovation, The University of Tokyo",
-    "github": "https://github.com/yourusername",
-    "scholar": "https://scholar.google.com/citations?user=your-id",
-    "orcid": "https://orcid.org/0000-0000-0000-0000",
-    "researchmap": "https://researchmap.jp/yourusername",
+    "github": "",
+    "scholar": "https://scholar.google.com/citations?user=tDkCpI0AAAAJ&hl=ja",
+    "orcid": "https://orcid.org/0000-0002-8128-3094",
+    "researchmap": "https://researchmap.jp/satoko_toyama",
     "researchInterests": "Research Interests",
     "researchTags": [
-      "Mathematics",
-      "Physics"
+      "Electron Microscopy",
+      "Materials Science",
+      "Electromagnetic Fields",
+      "Semiconductor Devices"
     ]
   },
   "publications": {

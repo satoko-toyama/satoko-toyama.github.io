@@ -1,6 +1,6 @@
 {
   "header": {
-    "name": "あなたの名前"
+    "name": "遠山　慧子"
   },
   "nav": {
     "bio": "プロフィール",
@@ -10,20 +10,22 @@
     "contact": "連絡先"
   },
   "bio": {
-    "name": "Your Name",
-    "nameJp": "あなたの名前",
+    "name": "Satoko Toyama",
+    "nameJp": "遠山　慧子",
     "phd": "Ph.D.",
     "phdJp": "博士（工学）",
-    "position": "博士研究員",
+    "position": "Assistant Professor",
     "affiliation": "東京大学 総合研究機構",
-    "github": "https://github.com/yourusername",
-    "scholar": "https://scholar.google.com/citations?user=your-id",
-    "orcid": "https://orcid.org/0000-0000-0000-0000",
-    "researchmap": "",
+    "github": "",
+    "scholar": "https://scholar.google.com/citations?user=tDkCpI0AAAAJ&hl=ja",
+    "orcid": "https://orcid.org/0000-0002-8128-3094",
+    "researchmap": "https://researchmap.jp/satoko_toyama",
     "researchInterests": "研究興味",
     "researchTags": [
-      "数学",
-      "物理学"
+      "電子顕微鏡",
+      "材料科学",
+      "電磁場",
+      "半導体デバイス"
     ]
   },
   "publications": {
