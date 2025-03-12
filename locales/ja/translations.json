@@ -24,8 +24,8 @@
     "researchTags": [
       "電子顕微鏡",
       "材料科学",
-      "電磁場",
-      "半導体デバイス"
+      "半導体",
+      "スピントロニクス"
     ]
   },
   "publications": {
@@ -61,7 +61,7 @@
     "location": "所在地",
     "relatedLinks": "関連リンク",
     "email": "メールアドレス",
-    "emailAdress": "your.email[at]example.com",
+    "emailAdress": "toyama[at]sigma.t.u-tokyo.ac.jp",
     "phone": "電話番号",
     "phoneNumber": "+81-3-5841-7689",
     "address": "住所",
