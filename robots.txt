@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # サイトマップの場所
-Sitemap: https://username.github.io/sitemap.xml
+Sitemap: https://satoko-toyama.github.io/sitemap.xml
