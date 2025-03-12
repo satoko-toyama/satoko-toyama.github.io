@@ -154,6 +154,20 @@ const Bio: React.FC = () => {
                   <span className="text-sm text-gray-600">Researchmap</span>
                 </div>
               )}
+              {t("bio.linkedin") !== "" && (
+                <div className="flex flex-col items-center">
+                  <a
+                    href={t("bio.linkedin")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-secondary hover:text-accent transition-colors"
+                    aria-label="LinkedIn"
+                  >
+                    <img src="/linkedin.png" alt="LinkedIn" className="h-6 w-6" />
+                  </a>
+                  <span className="text-sm text-gray-600">LinkedIn</span>
+                </div>
+              )}
             </div>
 
             {/* 自己紹介文 */}
