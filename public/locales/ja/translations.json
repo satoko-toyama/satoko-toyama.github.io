@@ -39,6 +39,7 @@
     "invited": "招待講演",
     "noPapers": "該当年の論文はありません。",
     "noPresentations": "該当年の発表はありません。",
+    "noMisc": "該当年のその他はありません。",
     "showAll": "すべて表示"
   },
   "awards": {
