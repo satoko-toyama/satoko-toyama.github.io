@@ -10,7 +10,7 @@
     "year": "2024",
     "month": "11",
     "doi": "10.1038/s44287-024-00117-7",
-    "isMainWork": true
+    "isMainWork": false
   },
   {
     "id": "44289474",
@@ -23,6 +23,6 @@
     "year": "2024",
     "month": "10",
     "doi": "10.1038/s41467-024-53014-w",
-    "isMainWork": true
+    "isMainWork": false
   }
 ]

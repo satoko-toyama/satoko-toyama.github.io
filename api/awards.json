@@ -1,5 +1,15 @@
 [
   {
+    "id": "50099500",
+    "title": "Katsu Research Encouragement Award",
+    "titleJa": "克研究奨励賞",
+    "awarder": "The University of Tokyo",
+    "awarderJa": "東京大学工学系研究科",
+    "year": "2025",
+    "month": "04",
+    "isMainWork": false
+  },
+  {
     "id": "49341459",
     "title": "Kazato Research Encouragement Prize",
     "titleJa": "風戸研究奨励賞",
@@ -31,7 +41,7 @@
   },
   {
     "id": "46398303",
-    "title": "日本顕微鏡学会第64回シンポジウム最優秀ポスター賞",
+    "title": "The Japanese Society of Microscopy",
     "titleJa": "日本顕微鏡学会第64回シンポジウム最優秀ポスター賞",
     "awarder": "日本顕微鏡学会",
     "awarderJa": "日本顕微鏡学会",

@@ -1,5 +1,18 @@
 [
   {
+    "id": "50413232",
+    "title": "Real-space observation of polarization induced charges at nanoscale ferroelectric interfaces",
+    "titleJa": "Real-space observation of polarization induced charges at nanoscale ferroelectric interfaces",
+    "authors": "Takehito Seki,Toshihiro Futazuka,Scott D Findlay,Naoya Shibata,Masaya Takamoto,Satoko Toyama,Yuichi Ikuhara",
+    "authorsJa": "Takehito Seki,Toshihiro Futazuka,Scott D Findlay,Naoya Shibata,Masaya Takamoto,Satoko Toyama,Yuichi Ikuhara",
+    "journal": "Science Advances",
+    "journalJa": "Science Advances",
+    "year": "2025",
+    "month": "06",
+    "doi": "10.1126/sciadv.adu8021",
+    "isMainWork": false
+  },
+  {
     "id": "48550851",
     "title": "Nanoscale electromagnetic field imaging by advanced differential phase-contrast STEM",
     "titleJa": "Nanoscale electromagnetic field imaging by advanced differential phase-contrast STEM",
@@ -10,7 +23,7 @@
     "year": "2024",
     "month": "11",
     "doi": "10.1038/s44287-024-00117-7",
-    "isMainWork": true
+    "isMainWork": false
   },
   {
     "id": "44289474",
@@ -23,7 +36,7 @@
     "year": "2024",
     "month": "10",
     "doi": "10.1038/s41467-024-53014-w",
-    "isMainWork": true
+    "isMainWork": false
   },
   {
     "id": "44289473",
@@ -34,9 +47,9 @@
     "journal": "Nature Nanotechnology",
     "journalJa": "Nature Nanotechnology",
     "year": "2023",
-    "month": "05",
+    "month": "03",
     "doi": "10.1038/s41565-023-01349-8",
-    "isMainWork": true
+    "isMainWork": false
   },
   {
     "id": "44289485",
@@ -62,7 +75,7 @@
     "year": "2022",
     "month": "08",
     "doi": "10.1016/j.ultramic.2022.113538",
-    "isMainWork": true
+    "isMainWork": false
   },
   {
     "id": "44289471",
@@ -75,6 +88,6 @@
     "year": "2020",
     "month": "09",
     "doi": "10.1016/j.ultramic.2020.113033",
-    "isMainWork": true
+    "isMainWork": false
   }
 ]
