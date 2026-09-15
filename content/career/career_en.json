@@ -1,52 +1,62 @@
 [
   {
-    "id": "career-1",
-    "position": "B.Eng. in Materials Engineering",
-    "organization": "The University of Tokyo",
-    "location": "Tokyo, Japan",
-    "startDate": "2014",
-    "endDate": "2018",
-    "description": "",
-    "type": "education"
-  },
-  {
-    "id": "career-2",
-    "position": "M.Eng. in Materials Engineering",
-    "organization": "The University of Tokyo",
-    "location": "Tokyo, Japan",
-    "startDate": "2018",
-    "endDate": "2020",
-    "description": "",
-    "type": "education"
-  },
-  {
-    "id": "career-3",
-    "position": "Ph.D. in Materials Engineering",
-    "organization": "The University of Tokyo",
-    "location": "Tokyo, Japan",
-    "startDate": "2020",
-    "endDate": "2023",
-    "description": "",
-    "type": "education"
-  },
-  {
-    "id": "career-4",
-    "position": "Project Assistant Professor",
-    "organization": "The University of Tokyo",
-    "location": "Tokyo, Japan",
-    "startDate": "2023",
-    "endDate": "2024",
-    "description": "",
-    "type": "work"
-  },
-  {
-    "id": "career-5",
+    "id": "work-46398253",
+    "type": "work",
     "position": "Assistant Professor",
     "organization": "The University of Tokyo",
-    "location": "Tokyo, Japan",
-    "startDate": "2024",
-    "endDate": null,
+    "description": "The Graduate School of Engineering Institute of Engineering Innovation",
+    "location": "",
+    "startDate": "2024-04",
+    "endDate": ""
+  },
+  {
+    "id": "work-46398244",
+    "type": "work",
+    "position": "Project Assistant Professor",
+    "organization": "The University of Tokyo",
+    "description": "The Graduate School of Engineering Institute of Engineering Innovation",
+    "location": "",
+    "startDate": "2023-04",
+    "endDate": "2024-03"
+  },
+  {
+    "id": "education-46398287",
+    "type": "education",
+    "position": "The Graduate School of Engineering / Department of Materials Engineering",
+    "organization": "The University of Tokyo",
     "description": "",
-    "type": "work"
+    "location": "",
+    "startDate": "2020-04",
+    "endDate": "2023-03"
+  },
+  {
+    "id": "work-46398232",
+    "type": "work",
+    "position": "JSPS Research Fellowships for Young Scientists",
+    "organization": "The University of Tokyo",
+    "description": "",
+    "location": "",
+    "startDate": "2020-04",
+    "endDate": "2023-03"
+  },
+  {
+    "id": "education-46398282",
+    "type": "education",
+    "position": "The Graduate School of Engineering / Department of Materials Engineering",
+    "organization": "The University of Tokyo",
+    "description": "",
+    "location": "",
+    "startDate": "2018-04",
+    "endDate": "2020"
+  },
+  {
+    "id": "education-46398268",
+    "type": "education",
+    "position": "The Faculty of Engineering / Department of Materials Engineering",
+    "organization": "The University of Tokyo",
+    "description": "",
+    "location": "",
+    "startDate": "2014-04",
+    "endDate": "2018-03"
   }
 ]

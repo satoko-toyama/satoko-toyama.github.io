@@ -1,15 +1,54 @@
 [
   {
+    "id": "51589226",
+    "title": "Enhanced transport properties in GaN heterostructures with sputter-epitaxy-grown ScAlN barriers via thermal annealing",
+    "titleJa": "Enhanced transport properties in GaN heterostructures with sputter-epitaxy-grown ScAlN barriers via thermal annealing",
+    "authors": "Tomoya Okuda, Shunsuke Ota, Kouei Kubota, Yusuke Wakamoto, Shinsuke Hashimoto, Takehito Seki, Satoko Toyama, Naoya Shibata, Takahiko Kawahara, Kozo Makiyama, Ken Nakata, Kazuhisa Ikeda, Takuya Maeda, Atsushi Kobayashi",
+    "authorsJa": "Tomoya Okuda, Shunsuke Ota, Kouei Kubota, Yusuke Wakamoto, Shinsuke Hashimoto, Takehito Seki, Satoko Toyama, Naoya Shibata, Takahiko Kawahara, Kozo Makiyama, Ken Nakata, Kazuhisa Ikeda, Takuya Maeda, Atsushi Kobayashi",
+    "journal": "Applied Physics Letters",
+    "journalJa": "Applied Physics Letters",
+    "year": "2025",
+    "month": "11",
+    "doi": "10.1063/5.0294172",
+    "isMainWork": false
+  },
+  {
+    "id": "51505550",
+    "title": "Drawing boundaries between feasible and unfeasible zeolite intergrowths using high-throughput computational screening with synthesis validation",
+    "titleJa": "Drawing boundaries between feasible and unfeasible zeolite intergrowths using high-throughput computational screening with synthesis validation",
+    "authors": "Kota Oishi, Koki Muraoka, Satoko Toyama, Takeshi Iwata, Takehito Seki, Naoya Shibata, Kenta Iyoki, Toru Wakihara, Tatsuya Okubo, Akira Nakayama",
+    "authorsJa": "Kota Oishi, Koki Muraoka, Satoko Toyama, Takeshi Iwata, Takehito Seki, Naoya Shibata, Kenta Iyoki, Toru Wakihara, Tatsuya Okubo, Akira Nakayama",
+    "journal": "Nature Materials",
+    "journalJa": "Nature Materials",
+    "year": "2025",
+    "month": "10",
+    "doi": "10.1038/s41563-025-02377-6",
+    "isMainWork": false
+  },
+  {
     "id": "50413232",
     "title": "Real-space observation of polarization induced charges at nanoscale ferroelectric interfaces",
     "titleJa": "Real-space observation of polarization induced charges at nanoscale ferroelectric interfaces",
-    "authors": "Takehito Seki,Toshihiro Futazuka,Scott D Findlay,Naoya Shibata,Masaya Takamoto,Satoko Toyama,Yuichi Ikuhara",
-    "authorsJa": "Takehito Seki,Toshihiro Futazuka,Scott D Findlay,Naoya Shibata,Masaya Takamoto,Satoko Toyama,Yuichi Ikuhara",
+    "authors": "Masaya Takamoto, Satoko Toyama, Takehito Seki, Toshihiro Futazuka, Scott D Findlay, Naoya Shibata, Yuichi Ikuhara",
+    "authorsJa": "Masaya Takamoto, Satoko Toyama, Takehito Seki, Toshihiro Futazuka, Scott D Findlay, Naoya Shibata, Yuichi Ikuhara",
     "journal": "Science Advances",
     "journalJa": "Science Advances",
     "year": "2025",
     "month": "06",
     "doi": "10.1126/sciadv.adu8021",
+    "isMainWork": false
+  },
+  {
+    "id": "50507038",
+    "title": "Phase Imaging Methods in the Scanning Transmission Electron Microscope",
+    "titleJa": "Phase Imaging Methods in the Scanning Transmission Electron Microscope",
+    "authors": "Gabriel Sanchez-Santolino, Laura Clark, Satoko Toyama, Takehito Seki, Naoya Shibata",
+    "authorsJa": "Gabriel Sanchez-Santolino, Laura Clark, Satoko Toyama, Takehito Seki, Naoya Shibata",
+    "journal": "Nano Letters",
+    "journalJa": "Nano Letters",
+    "year": "2025",
+    "month": "06",
+    "doi": "10.1021/acs.nanolett.4c06697",
     "isMainWork": false
   }
 ]

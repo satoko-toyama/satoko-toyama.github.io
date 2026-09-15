@@ -1,52 +1,62 @@
 [
   {
-    "id": "career-1",
-    "position": "学士（工学）",
-    "organization": "東京大学",
-    "location": "東京、日本",
-    "startDate": "2014",
-    "endDate": "2018",
-    "description": "",
-    "type": "education"
-  },
-  {
-    "id": "career-2",
-    "position": "修士（工学）",
-    "organization": "東京大学",
-    "location": "東京、日本",
-    "startDate": "2018",
-    "endDate": "2020",
-    "description": "",
-    "type": "education"
-  },
-  {
-    "id": "career-3",
-    "position": "博士（工学）",
-    "organization": "東京大学",
-    "location": "東京、日本",
-    "startDate": "2020",
-    "endDate": "2023",
-    "description": "",
-    "type": "education"
-  },
-  {
-    "id": "career-4",
-    "position": "特任助教",
-    "organization": "東京大学",
-    "location": "東京、日本",
-    "startDate": "2023",
-    "endDate": "2024",
-    "description": "",
-    "type": "work"
-  },
-  {
-    "id": "career-5",
+    "id": "work-46398253",
+    "type": "work",
     "position": "助教",
     "organization": "東京大学",
-    "location": "東京、日本",
-    "startDate": "2024",
-    "endDate": "2025",
+    "description": "大学院工学系研究科 附属総合研究機構",
+    "location": "",
+    "startDate": "2024-04",
+    "endDate": ""
+  },
+  {
+    "id": "work-46398244",
+    "type": "work",
+    "position": "特任助教",
+    "organization": "東京大学",
+    "description": "大学院工学系研究科 附属総合研究機構",
+    "location": "",
+    "startDate": "2023-04",
+    "endDate": "2024-03"
+  },
+  {
+    "id": "education-46398287",
+    "type": "education",
+    "position": "大学院工学系研究科 / マテリアル工学専攻",
+    "organization": "東京大学",
     "description": "",
-    "type": "work"
+    "location": "",
+    "startDate": "2020-04",
+    "endDate": "2023-03"
+  },
+  {
+    "id": "work-46398232",
+    "type": "work",
+    "position": "日本学術振興会特別研究員（DC1）",
+    "organization": "東京大学",
+    "description": "",
+    "location": "",
+    "startDate": "2020-04",
+    "endDate": "2023-03"
+  },
+  {
+    "id": "education-46398282",
+    "type": "education",
+    "position": "大学院工学系研究科 / マテリアル工学専攻",
+    "organization": "東京大学",
+    "description": "",
+    "location": "",
+    "startDate": "2018-04",
+    "endDate": "2020"
+  },
+  {
+    "id": "education-46398268",
+    "type": "education",
+    "position": "工学部 / マテリアル工学科",
+    "organization": "東京大学",
+    "description": "",
+    "location": "",
+    "startDate": "2014-04",
+    "endDate": "2018-03"
   }
 ]
