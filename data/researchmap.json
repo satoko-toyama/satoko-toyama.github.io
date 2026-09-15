@@ -312,6 +312,19 @@
     ],
     "misc": [
       {
+        "id": "54961118",
+        "title": "Local Electric-field Imaging at Solid-electrolyte Interfaces by tDPC STEM",
+        "titleJa": "tDPC STEM法による固体電解質界面の空間電荷層直接観察",
+        "authors": "Satoko TOYAMA, Bin FENG, Takehito SEKI, Naoya SHIBATA",
+        "authorsJa": "遠山 慧子, 馮 斌, 関 岳人, 柴田 直哉",
+        "journal": "Denki Kagaku",
+        "journalJa": "電気化学",
+        "year": "2026",
+        "month": "09",
+        "doi": "10.5796/denkikagaku.26-fe0302",
+        "isMainWork": false
+      },
+      {
         "id": "50099664",
         "title": "Direct Observation of Electromagnetic Fields at the Crystal Interfaces by Tilt-scan-averaged DPC STEM",
         "titleJa": "傾斜平均DPC STEM による材料・デバイス界面局所電磁場観察",
@@ -726,5 +739,5 @@
       }
     ]
   },
-  "lastCheckedAt": "2026-09-15T13:02:57.416Z"
+  "lastCheckedAt": "2026-09-15T13:38:35.518Z"
 }
