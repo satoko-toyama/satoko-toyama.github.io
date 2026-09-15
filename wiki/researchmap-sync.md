@@ -2,7 +2,7 @@
 
 ## 自動実行
 
-GitHub Actions の **Deploy to GitHub Pages** が毎日 **08:17（日本時間）** に
+GitHub Actions の **Deploy to GitHub Pages** が毎月1日 **09:17（日本時間）** に
 公開 researchmap API を取得し、テスト・ビルド後に GitHub Pages を更新します。
 GitHub の混雑で開始が遅れることがあります。PC や Codex の起動は不要です。
 `main` への push 時にも同期します。

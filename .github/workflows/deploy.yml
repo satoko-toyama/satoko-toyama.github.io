@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
   schedule:
-    # 08:17 Asia/Tokyo (GitHub schedules use UTC and may start late).
-    - cron: '17 23 * * *'
+    # Monthly on the 1st at 09:17 Asia/Tokyo (00:17 UTC; may start late).
+    - cron: '17 0 1 * *'
   workflow_dispatch:
 
 concurrency:
