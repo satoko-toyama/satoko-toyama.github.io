@@ -1,10 +1,23 @@
 [
   {
+    "id": "50099664",
+    "title": "Direct Observation of Electromagnetic Fields at the Crystal Interfaces by Tilt-scan-averaged DPC STEM",
+    "titleJa": "傾斜平均DPC STEM による材料・デバイス界面局所電磁場観察",
+    "authors": "Satoko TOYAMA, Takehito SEKI, Naoya SHIBATA",
+    "authorsJa": "遠 山 慧子, 関 岳 人, 柴 田 直 哉",
+    "journal": "BULLETIN OF THE CERAMICS SOCIETY OF JAPAN",
+    "journalJa": "セラミックス",
+    "year": "2025",
+    "month": "05",
+    "doi": "",
+    "isMainWork": false
+  },
+  {
     "id": "49008304",
     "title": "Real-Space Observation of Electric Fields and Charge Densities at Crystal Interfaces Using Advanced Differential Phase Contrast STEM",
     "titleJa": "Real-Space Observation of Electric Fields and Charge Densities at Crystal Interfaces Using Advanced Differential Phase Contrast STEM",
-    "authors": "Satoko Toyama,Takehito Seki,Naoya Shibata",
-    "authorsJa": "Satoko Toyama,Takehito Seki,Naoya Shibata",
+    "authors": "Satoko Toyama, Takehito Seki, Naoya Shibata",
+    "authorsJa": "Satoko Toyama, Takehito Seki, Naoya Shibata",
     "journal": "",
     "journalJa": "",
     "year": "2025",

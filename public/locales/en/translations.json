@@ -11,11 +11,11 @@
   },
   "bio": {
     "name": "Satoko Toyama",
-    "nameJp": "遠山　慧子",
+    "nameJp": "遠山 慧子",
     "phd": "Ph.D.",
     "phdJp": "博士（工学）",
     "position": "Assistant Professor",
-    "affiliation": "Institute of Engineering Innovation, The University of Tokyo",
+    "affiliation": "The University of Tokyo / The Graduate School of Engineering Institute of Engineering Innovation",
     "github": "",
     "scholar": "https://scholar.google.com/citations?user=tDkCpI0AAAAJ&hl=ja",
     "orcid": "https://orcid.org/0000-0002-8128-3094",
@@ -23,10 +23,7 @@
     "linkedin": "https://www.linkedin.com/in/satoko-toyama-039436339/",
     "researchInterests": "Research Interests",
     "researchTags": [
-      "Electron Microscopy",
-      "Materials Science",
-      "Semiconductor",
-      "Spintronics"
+      "Scanning Transmission Electron Microscopy"
     ]
   },
   "publications": {

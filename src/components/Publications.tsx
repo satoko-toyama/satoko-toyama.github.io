@@ -287,7 +287,7 @@ const Publications: React.FC = () => {
                                 : paper.titleJa}
                             </h3>
                           </div>
-                          <p className="text-gray-700 mb-1">{paper.authors}</p>
+                          <p className="text-gray-700 mb-1">{i18n.language === "ja" ? paper.authorsJa : paper.authors}</p>
                           <p className="text-gray-600 italic mb-2">
                             {i18n.language == "en"
                               ? paper.journal
@@ -407,7 +407,7 @@ const Publications: React.FC = () => {
                             {i18n.language == "en" ? item.title : item.titleJa}
                           </h3>
                         </div>
-                        <p className="text-gray-700 mb-1">{item.authors}</p>
+                        <p className="text-gray-700 mb-1">{i18n.language === "ja" ? item.authorsJa : item.authors}</p>
                         <p className="text-gray-600 italic mb-2">
                           {i18n.language == "en"
                             ? item.journal

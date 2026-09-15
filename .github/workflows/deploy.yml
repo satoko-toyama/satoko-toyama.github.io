@@ -2,82 +2,65 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  schedule:
+    # 08:17 Asia/Tokyo (GitHub schedules use UTC and may start late).
+    - cron: '17 23 * * *'
   workflow_dispatch:
+
+concurrency:
+  group: website-deployment
+  cancel-in-progress: false
+
+permissions:
+  contents: write
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write  # リポジトリへの書き込み権限を明示的に付与
-
+    timeout-minutes: 15
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '22'
+          cache: npm
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Generate API
-        run: npm run generate-api
+      - name: Test researchmap synchronization
+        run: npm test
+
+      - name: Fetch public researchmap data
+        run: npm run sync-researchmap
 
       - name: Build
         run: npm run build
-        # postbuildスクリプトで自動的にSEOファイル（sitemap.xml、robots.txt）が生成されます
 
-      # 重要: .nojekyllファイルをルートに作成する
-      - name: Create .nojekyll file
+      - name: Disable Jekyll
+        run: touch dist/.nojekyll
+
+      - name: Save verified researchmap content
         run: |
-          touch dist/.nojekyll
-          echo "Created .nojekyll file"
-          ls -la dist/
-
-      # デバッグ：生成されたファイルを確認
-      - name: Debug - Check generated files
-        run: |
-          echo "Checking dist directory content:"
-          ls -la dist/
-
-          if [ -f "dist/sitemap.xml" ]; then
-            echo "✓ sitemap.xml exists"
-            head -n 10 dist/sitemap.xml
-          else
-            echo "✗ sitemap.xml does not exist!"
+          git add data/researchmap.json public/api public/content/career public/locales
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Update website from public researchmap data'
+            git push origin HEAD:main
           fi
 
-          if [ -f "dist/robots.txt" ]; then
-            echo "✓ robots.txt exists"
-            cat dist/robots.txt
-          else
-            echo "✗ robots.txt does not exist!"
-          fi
-
-          # .nojekyllファイルの存在を明示的に確認
-          if [ -f "dist/.nojekyll" ]; then
-            echo "✓ .nojekyll exists"
-          else
-            echo "✗ .nojekyll does not exist!"
-            echo "Creating it again to be sure..."
-            touch dist/.nojekyll
-          fi
-
-      - name: Debug - Repository info
-        run: |
-          echo "Repository: ${{github.repository}}"
-          echo "Actor: ${{github.actor}}"
-          echo "Ref: ${{github.ref}}"
-
-      # 確実にgh-pagesブランチを作成
+      # GITHUB_TOKEN commits do not trigger a second push workflow.
+      # Deploy in this same job, only after fetching, testing and building succeed.
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist  # ビルド出力ディレクトリ
-          branch: gh-pages  # デプロイ先ブランチ
-          clean: true  # デプロイ先ブランチをクリーン
+          folder: dist
+          branch: gh-pages
+          clean: true

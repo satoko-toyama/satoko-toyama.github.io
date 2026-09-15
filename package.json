@@ -11,7 +11,9 @@
     "deploy": "node scripts/generatePublicApi.cjs && gh-pages -d dist",
     "generate-api": "node scripts/generatePublicApi.cjs",
     "generate-seo-files": "node scripts/generateSeoFiles.cjs",
-    "postbuild": "npm run generate-seo-files"
+    "postbuild": "npm run generate-seo-files",
+    "sync-researchmap": "node scripts/syncResearchmap.cjs",
+    "test": "node --test scripts/researchmap.test.cjs"
   },
   "dependencies": {
     "i18next": "^23.16.8",

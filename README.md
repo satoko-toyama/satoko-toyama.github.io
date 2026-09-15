@@ -1,3 +1,7 @@
+# Satoko Toyama — researchmap 同期
+
+このサイトは公開 researchmap API から毎日自動更新します。設定・更新方法は [researchmap 自動同期](wiki/researchmap-sync.md) を参照してください。
+
 # Academic Website Template
 
 A responsive academic website template using React, TypeScript, and Tailwind CSS.
