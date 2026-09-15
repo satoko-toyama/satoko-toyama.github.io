@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "id": "46398510",
+    "title": "Quantitative electric field imaging of a p-n junction by DPC STEM",
+    "titleJa": "Quantitative electric field imaging of a p-n junction by DPC STEM",
+    "speakers": "Satoko Toyama,Takehito Seki,Hirokazu Sasaki,Yuichi Ikuhara,Naoya Shibata",
+    "speakersJa": "Satoko Toyama,Takehito Seki,Hirokazu Sasaki,Yuichi Ikuhara,Naoya Shibata",
+    "conference": "Frontiers of Electron Microscopy and Materials Science",
+    "conferenceJa": "Frontiers of Electron Microscopy and Materials Science",
+    "date": "2019-09",
+    "year": "2019",
+    "place": "",
+    "placeJa": "",
+    "isInvited": false
+  },
+  {
+    "id": "46398491",
+    "title": "Electric field quantification method for a p-n junction by DPC STEM",
+    "titleJa": "Electric field quantification method for a p-n junction by DPC STEM",
+    "speakers": "Satoko Toyama,Takehito Seki,Hirokazu Sasaki,Yuichi Ikuhara,Naoya Shibata",
+    "speakersJa": "Satoko Toyama,Takehito Seki,Hirokazu Sasaki,Yuichi Ikuhara,Naoya Shibata",
+    "conference": "The 6th International Symposium on Advanced Microscopy and Theoretical Calculations",
+    "conferenceJa": "The 6th International Symposium on Advanced Microscopy and Theoretical Calculations",
+    "date": "2019-06",
+    "year": "2019",
+    "place": "",
+    "placeJa": "",
+    "isInvited": false
+  }
+]

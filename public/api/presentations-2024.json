@@ -1,16 +1,16 @@
 [
   {
-    "id": "presentation-4",
-    "title": "Your Presentation Title4",
-    "titleJa": "あなたの発表タイトル4",
-    "speakers": "Author 1, Author 2",
-    "speakersJa": "著者1, 著者2",
-    "conference": "Conference Name",
-    "conferenceJa": "会議名",
-    "date": "2024-11-31",
+    "id": "46766150",
+    "title": "Electromagnetic field observation of materials and devices by tDPC STEM",
+    "titleJa": "tDPC STEMによるデバイス・材料局所電磁場観察",
+    "speakers": "Satoko Toyama,Takehito Seki,Naoya Shibata",
+    "speakersJa": "遠山慧子,関岳人,柴田直哉",
+    "conference": "日本顕微鏡学会第80回学術講演会",
+    "conferenceJa": "日本顕微鏡学会第80回学術講演会",
+    "date": "2024-06-03",
     "year": "2024",
-    "place": "Location",
-    "placeJa": "場所",
+    "place": "",
+    "placeJa": "",
     "isInvited": true
   }
 ]

@@ -3,7 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # デフォルトブランチ名
+      - main
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
@@ -31,8 +32,12 @@ jobs:
         run: npm run build
         # postbuildスクリプトで自動的にSEOファイル（sitemap.xml、robots.txt）が生成されます
 
+      # 重要: .nojekyllファイルをルートに作成する
       - name: Create .nojekyll file
-        run: touch dist/.nojekyll
+        run: |
+          touch dist/.nojekyll
+          echo "Created .nojekyll file"
+          ls -la dist/
 
       # デバッグ：生成されたファイルを確認
       - name: Debug - Check generated files
@@ -54,9 +59,25 @@ jobs:
             echo "✗ robots.txt does not exist!"
           fi
 
+          # .nojekyllファイルの存在を明示的に確認
+          if [ -f "dist/.nojekyll" ]; then
+            echo "✓ .nojekyll exists"
+          else
+            echo "✗ .nojekyll does not exist!"
+            echo "Creating it again to be sure..."
+            touch dist/.nojekyll
+          fi
+
+      - name: Debug - Repository info
+        run: |
+          echo "Repository: ${{github.repository}}"
+          echo "Actor: ${{github.actor}}"
+          echo "Ref: ${{github.ref}}"
+
+      # 確実にgh-pagesブランチを作成
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist  # ビルド出力ディレクトリ
           branch: gh-pages  # デプロイ先ブランチ
-          clean: true  # デプロイ前にgh-pagesブランチをクリーンアップ
+          clean: true  # デプロイ先ブランチをクリーン

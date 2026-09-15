@@ -61,18 +61,28 @@ const awardsResult = readCsv(awardsPath);
 const researchProjectsResult = readCsv(researchProjectsPath);
 
 // データ処理関数（前と同じ）
-const formattedPapers = papersResult.data.map(paper => {
+const visiblePapers = papersResult.data.filter(paper => {
+  if (paper.hasOwnProperty('公開の有無') && paper['公開の有無'] === 'closed') {
+    return false;
+  }
+  return true;
+});
+const formattedPapers = visiblePapers.map(paper => {
   let authors = '';
   if (paper['著者(英語)']) {
     authors = paper['著者(英語)'].replace(/^\[|\]$/g, '');
+    if (authors) authors = authors.replace(/\\$/, '');
   } else if (paper['著者(日本語)']) {
     authors = paper['著者(日本語)'].replace(/^\[|\]$/g, '');
+    if (authors) authors = authors.replace(/\\$/, '');
   }
   let authorsJa = '';
   if (paper['著者(日本語)']) {
     authorsJa = paper['著者(日本語)'].replace(/^\[|\]$/g, '');
+    if (authorsJa) authorsJa = authorsJa.replace(/\\$/, '');
   } else if (paper['著者(英語)']) {
     authorsJa = paper['著者(英語)'].replace(/^\[|\]$/g, '');
+    if (authorsJa) authorsJa = authorsJa.replace(/\\$/, '');
   }
 
   return {
@@ -90,19 +100,29 @@ const formattedPapers = papersResult.data.map(paper => {
   };
 });
 
-const formattedPresentations = presentationsResult.data.map(presentation => {
+const visiblePresentations = presentationsResult.data.filter(presentation => {
+  if (presentation.hasOwnProperty('公開の有無') && presentation['公開の有無'] === 'closed') {
+    return false;
+  }
+  return true;
+});
+const formattedPresentations = visiblePresentations.map(presentation => {
   let speakers = '';
   if (presentation['講演者(英語)']) {
     speakers = presentation['講演者(英語)'].replace(/^\[|\]$/g, '');
+    if (speakers) speakers = speakers.replace(/\\$/, '');
   } else if (presentation['講演者(日本語)']) {
     speakers = presentation['講演者(日本語)'].replace(/^\[|\]$/g, '');
+    if (speakers) speakers = speakers.replace(/\\$/, '');
   }
 
   let speakersJa = '';
   if (presentation['講演者(日本語)']) {
     speakersJa = presentation['講演者(日本語)'].replace(/^\[|\]$/g, '');
+    if (speakersJa) speakersJa = speakersJa.replace(/\\$/, '');
   } else if (presentation['講演者(英語)']) {
     speakersJa = presentation['講演者(英語)'].replace(/^\[|\]$/g, '');
+    if (speakersJa) speakersJa = speakersJa.replace(/\\$/, '');
   }
 
   let year = '';
@@ -144,19 +164,29 @@ const formattedPresentations = presentationsResult.data.map(presentation => {
   };
 });
 
-const formattedMisc = miscResult.data.map(misc => {
+const visibleMisc = miscResult.data.filter(misc => {
+  if (misc.hasOwnProperty('公開の有無') && misc['公開の有無'] === 'closed') {
+    return false;
+  }
+  return true;
+});
+const formattedMisc = visibleMisc.map(misc => {
   let authors = '';
   if (misc['著者(英語)']) {
     authors = misc['著者(英語)'].replace(/^\[|\]$/g, '');
+    if (authors) authors = authors.replace(/\\$/, '');
   } else if (misc['著者(日本語)']) {
     authors = misc['著者(日本語)'].replace(/^\[|\]$/g, '');
+    if (authors) authors = authors.replace(/\\$/, '');
   }
 
   let authorsJa = '';
   if (misc['著者(日本語)']) {
     authorsJa = misc['著者(日本語)'].replace(/^\[|\]$/g, '');
+    if (authorsJa) authorsJa = authorsJa.replace(/\\$/, '');
   } else if (misc['著者(英語)']) {
     authorsJa = misc['著者(英語)'].replace(/^\[|\]$/g, '');
+    if (authorsJa) authorsJa = authorsJa.replace(/\\$/, '');
   }
 
   return {
@@ -174,7 +204,13 @@ const formattedMisc = miscResult.data.map(misc => {
   };
 });
 
-const formattedAwards = awardsResult.data.map(award => {
+const visibleAwards = awardsResult.data.filter(award => {
+  if (award.hasOwnProperty('公開の有無') && award['公開の有無'] === 'closed') {
+    return false;
+  }
+  return true;
+});
+const formattedAwards = visibleAwards.map(award => {
   return {
     id: award.ID || `award-${Math.random().toString(36).substr(2, 9)}`,
     title: award['賞名(英語)'] || award['賞名(日本語)'] || 'Untitled',
@@ -187,7 +223,13 @@ const formattedAwards = awardsResult.data.map(award => {
   };
 });
 
-const formattedResearchProjects = researchProjectsResult.data.map(researchProject => {
+const visibleResearchProjects = researchProjectsResult.data.filter(researchProject => {
+  if (researchProject.hasOwnProperty('公開の有無') && researchProject['公開の有無'] === 'closed') {
+    return false;
+  }
+  return true;
+});
+const formattedResearchProjects = visibleResearchProjects.map(researchProject => {
   return {
     id: researchProject.ID || `researchProject-${Math.random().toString(36).substr(2, 9)}`,
     title: researchProject['制度名(英語)'] || researchProject['制度名(日本語)'] || '',
@@ -208,27 +250,47 @@ const formattedResearchProjects = researchProjectsResult.data.map(researchProjec
 });
 
 
-// 日付でソート
-const sortedPapers = formattedPapers.sort((a, b) => {
-  return (b.year + b.month) - (a.year + a.month);
-});
+// 年月を数値キー（YYYYMM相当）に変換する。空欄や不正値は 0 として扱う。
+// 文字列連結("2024"+"03")を減算に頼ると月が空のとき桁数が崩れて順序が壊れるため、
+// 明示的に数値化して比較する。
+const yearMonthKey = (year, month) =>
+  (Number(year) || 0) * 100 + (Number(month) || 0);
 
-const sortedPresentations = formattedPresentations.sort((a, b) => {
-  return new Date(b.date) - new Date(a.date);
-});
+// 日付文字列を数値（ミリ秒）に変換する。不正な日付は 0 として末尾に寄せる。
+const dateKey = (dateStr) => {
+  const time = new Date(dateStr).getTime();
+  return Number.isNaN(time) ? 0 : time;
+};
 
-const sortedMisc = formattedMisc.sort((a, b) => {
-  return (b.year + b.month) - (a.year + a.month);
-});
+// 日付でソート（降順：新しいものが先頭）
+const sortedPapers = formattedPapers.sort(
+  (a, b) => yearMonthKey(b.year, b.month) - yearMonthKey(a.year, a.month)
+);
 
-const sortedAwards = formattedAwards.sort((a, b) => {
-  return (b.year + b.month) - (a.year + a.month);
-});
+const sortedPresentations = formattedPresentations.sort(
+  (a, b) => dateKey(b.date) - dateKey(a.date)
+);
 
-const sortedResearchProjects = formattedResearchProjects.sort((a, b) => {
-  return (b.yearFrom + b.monthFrom) - (a.yearFrom + a.monthFrom);
-});
+const sortedMisc = formattedMisc.sort(
+  (a, b) => yearMonthKey(b.year, b.month) - yearMonthKey(a.year, a.month)
+);
 
+const sortedAwards = formattedAwards.sort(
+  (a, b) => yearMonthKey(b.year, b.month) - yearMonthKey(a.year, a.month)
+);
+
+const sortedResearchProjects = formattedResearchProjects.sort(
+  (a, b) =>
+    yearMonthKey(b.yearFrom, b.monthFrom) - yearMonthKey(a.yearFrom, a.monthFrom)
+);
+
+
+// Remove obsolete yearly files so deleted or hidden records do not remain published.
+for (const file of fs.readdirSync(outputDir)) {
+  if (/^(papers|presentations|misc)-\d{4}\.json$/.test(file)) {
+    fs.unlinkSync(path.join(outputDir, file));
+  }
+}
 
 // APIファイルを作成
 // 個別のJSONファイル
@@ -263,7 +325,7 @@ const yearsSet = new Set();
 sortedPapers.forEach(paper => paper.year && yearsSet.add(paper.year));
 sortedPresentations.forEach(presentation => presentation.year && yearsSet.add(presentation.year));
 sortedMisc.forEach(misc => misc.year && yearsSet.add(misc.year));
-const years = Array.from(yearsSet).sort((a, b) => b - a);
+const years = Array.from(yearsSet).sort((a, b) => Number(b) - Number(a));
 
 // 年ごとのデータを作成
 years.forEach(year => {

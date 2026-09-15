@@ -20,8 +20,8 @@ const Awards: React.FC = () => {
       setIsLoading(true);
       try {
         // 言語に応じたJSONファイルのパス
-        const awardsPath = `/api/awards.json`;
-        const grantsPath = `/api/researchProjects.json`;
+        const awardsPath = `./api/awards.json`;
+        const grantsPath = `./api/researchProjects.json`;
         const projectsPath = `./content/etc/projects_${i18n.language}.json`;
 
         // 並列でデータをフェッチ
@@ -32,10 +32,25 @@ const Awards: React.FC = () => {
             fetch(projectsPath),
           ]);
 
-        // 各データを解析
-        const awardsData = await awardsResponse.json();
-        const grantsData = await grantsResponse.json();
-        const projectsData = await projectsResponse.json();
+        // レスポンスのステータスを確認
+        if (!awardsResponse.ok) {
+          throw new Error(`HTTP ${awardsResponse.status} for awards`);
+        }
+        if (!grantsResponse.ok) {
+          throw new Error(`HTTP ${grantsResponse.status} for research projects`);
+        }
+        if (!projectsResponse.ok) {
+          throw new Error(`HTTP ${projectsResponse.status} for projects`);
+        }
+
+        // 各データを解析（配列以外が返っても落ちないようガードする）
+        const awardsJson = await awardsResponse.json();
+        const grantsJson = await grantsResponse.json();
+        const projectsJson = await projectsResponse.json();
+
+        const awardsData = Array.isArray(awardsJson) ? awardsJson : [];
+        const grantsData = Array.isArray(grantsJson) ? grantsJson : [];
+        const projectsData = Array.isArray(projectsJson) ? projectsJson : [];
 
         setAwards(awardsData);
         setGrants(grantsData);
@@ -74,7 +89,7 @@ const Awards: React.FC = () => {
 
   // 表示するアイテムの制限を行う関数を追加
   const getDisplayedItems = <T extends Award | Grant | Project>(
-    items: T[]
+    items: T[],
   ): T[] => {
     return showAll ? items : items.slice(0, maxItems);
   };
@@ -82,6 +97,10 @@ const Awards: React.FC = () => {
   // 表示するタブがあるかどうかを確認
   const hasAnyData =
     awards.length > 0 || grants.length > 0 || projects.length > 0;
+
+  if (!isLoading && !hasAnyData) {
+    return null;
+  }
 
   return (
     <section id="awards" className="py-16 bg-background-light">
@@ -225,7 +244,11 @@ const Awards: React.FC = () => {
                             ? grant.subject
                             : grant.subjectJa}
                         </h4>
-                        <p className="text-gray-700">{grant.funder}</p>
+                        <p className="text-gray-700">
+                          {i18n.language == "en"
+                            ? grant.funder
+                            : grant.funderJa}
+                        </p>
                         <p className="text-gray-600">
                           {grant.number && grant.number.trim() !== "" ? (
                             <>

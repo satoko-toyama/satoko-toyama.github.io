@@ -1,10 +1,9 @@
+import Markdown from "markdown-to-jsx";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { FaGoogleScholar } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
-import { GiJapan } from "react-icons/gi";
+import { FaGoogleScholar } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
-import Markdown from "markdown-to-jsx";
 
 const Bio: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -16,6 +15,9 @@ const Bio: React.FC = () => {
       try {
         setIsLoading(true);
         const response = await fetch(`./content/bio/bio_${i18n.language}.md`);
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status} for bio content`);
+        }
         const content = await response.text();
         setBioContent(content);
       } catch (error) {
@@ -42,7 +44,7 @@ const Bio: React.FC = () => {
           {/* プロフィール写真 */}
           <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg flex-shrink-0">
             <img
-              src="/images/profile.png"
+              src="./images/profile.png"
               alt={t("bio.name")}
               className="w-full h-full object-cover"
             />
@@ -64,7 +66,7 @@ const Bio: React.FC = () => {
                   </>
                 )}
               </h1>
-              <h2 className="text-xl text-gray-700 mb-1">
+              <p className="text-xl text-gray-700 mb-1">
                 {i18n.language === "en" ? (
                   <>
                     {t("bio.nameJp")}
@@ -76,7 +78,7 @@ const Bio: React.FC = () => {
                     {t("bio.phd") && ` | ${t("bio.phd")}`}
                   </>
                 )}
-              </h2>
+              </p>
               <p className="text-lg text-gray-600">
                 {t("bio.position")} | {t("bio.affiliation")}
               </p>
@@ -132,7 +134,7 @@ const Bio: React.FC = () => {
                     aria-label="ORCID"
                   >
                     <img
-                      src="/ORCID-iD_icon_vector.svg"
+                      src="./ORCID-iD_icon_vector.svg"
                       alt="ORCID"
                       className="h-6 w-6"
                     />
@@ -149,7 +151,7 @@ const Bio: React.FC = () => {
                     className="text-secondary hover:text-accent transition-colors"
                     aria-label="Researchmap"
                   >
-                    <img src="/rm.png" alt="Researchmap" className="h-6 w-6" />
+                    <img src="./rm.png" alt="Researchmap" className="h-6 w-6" />
                   </a>
                   <span className="text-sm text-gray-600">Researchmap</span>
                 </div>
@@ -163,7 +165,11 @@ const Bio: React.FC = () => {
                     className="text-secondary hover:text-accent transition-colors"
                     aria-label="LinkedIn"
                   >
-                    <img src="/linkedin.png" alt="LinkedIn" className="h-6 w-6" />
+                    <img
+                      src="./linkedin.png"
+                      alt="LinkedIn"
+                      className="h-6 w-6"
+                    />
                   </a>
                   <span className="text-sm text-gray-600">LinkedIn</span>
                 </div>
@@ -196,7 +202,9 @@ const Bio: React.FC = () => {
               </div>
             ) : (
               <div className="prose max-w-none">
-                <Markdown>{bioContent}</Markdown>
+                <Markdown options={{ disableParsingRawHTML: true }}>
+                  {bioContent}
+                </Markdown>
               </div>
             )}
 

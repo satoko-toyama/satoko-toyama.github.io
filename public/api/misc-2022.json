@@ -1,15 +1,15 @@
 [
   {
-    "id": "paper-2",
-    "title": "Your Paper Title 2",
-    "titleJa": "Your Paper Title 2",
-    "authors": "Author 1, Author 2",
-    "authorsJa": "著者1, 著者2",
-    "journal": "Journal Name",
-    "journalJa": "ジャーナル名",
+    "id": "46398406",
+    "title": "The Observation of Local Electric Fields in GaN/AlGaN/InGaN Multi-heterostructures by Differential Phase Contrast STEM",
+    "titleJa": "微分位相コントラストSTEMを用いたGaN/AlGaN/InGaNマルチヘテロ接合の局所電場観察",
+    "authors": "Satoko Toyama,Takehito Seki,Yuya Kanitani,Shigetaka Tomiya,Yuichi Ikuhara,Naoya Shibata",
+    "authorsJa": "遠山慧子,関岳人,蟹谷裕也,冨谷茂隆,幾原雄一,柴田直哉",
+    "journal": "IEEJ Transactions on Electronics, Information and Systems",
+    "journalJa": "電気学会論文誌C（電子・情報・システム部門誌）",
     "year": "2022",
-    "month": "12",
-    "doi": "10.1234/abcd",
-    "isMainWork": true
+    "month": "03",
+    "doi": "10.1541/ieejeiss.142.367",
+    "isMainWork": false
   }
 ]

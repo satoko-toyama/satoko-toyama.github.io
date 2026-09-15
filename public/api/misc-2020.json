@@ -1,15 +1,15 @@
 [
   {
-    "id": "paper-5",
-    "title": "Your Paper Title 5",
-    "titleJa": "Your Paper Title 5",
-    "authors": "著者1, 著者2",
-    "authorsJa": "著者1, 著者2",
-    "journal": "ジャーナル名",
-    "journalJa": "ジャーナル名",
+    "id": "48076557",
+    "title": "Quantitative electric field mapping in GaN/AlGaN heterostructures by DPC STEM",
+    "titleJa": "DPC STEMを用いたGaN系半導体ヘテロ接合界面における電場定量観察法の開発",
+    "authors": "遠山慧子,関岳人,蟹谷裕也,工藤喜弘,冨谷茂隆,幾原雄一,柴田直哉",
+    "authorsJa": "遠山慧子,関岳人,蟹谷裕也,工藤喜弘,冨谷茂隆,幾原雄一,柴田直哉",
+    "journal": "日本セラミックス協会秋季シンポジウム講演予稿集(CD-ROM)",
+    "journalJa": "日本セラミックス協会秋季シンポジウム講演予稿集(CD-ROM)",
     "year": "2020",
-    "month": "01",
-    "doi": "10.1234/abcd",
-    "isMainWork": true
+    "month": "",
+    "doi": "",
+    "isMainWork": false
   }
 ]
