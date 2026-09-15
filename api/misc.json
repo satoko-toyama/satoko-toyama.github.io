@@ -26,6 +26,19 @@
     "isMainWork": false
   },
   {
+    "id": "48076557",
+    "title": "Quantitative electric field mapping in GaN/AlGaN heterostructures by DPC STEM",
+    "titleJa": "DPC STEMを用いたGaN系半導体ヘテロ接合界面における電場定量観察法の開発",
+    "authors": "遠山慧子,関岳人,蟹谷裕也,工藤喜弘,冨谷茂隆,幾原雄一,柴田直哉",
+    "authorsJa": "遠山慧子,関岳人,蟹谷裕也,工藤喜弘,冨谷茂隆,幾原雄一,柴田直哉",
+    "journal": "日本セラミックス協会秋季シンポジウム講演予稿集(CD-ROM)",
+    "journalJa": "日本セラミックス協会秋季シンポジウム講演予稿集(CD-ROM)",
+    "year": "2020",
+    "month": "",
+    "doi": "",
+    "isMainWork": false
+  },
+  {
     "id": "46406396",
     "title": "Direct observation of electric field in GaN semiconductor hetero interface by DPC STEM",
     "titleJa": "DPC STEMを用いたGaN系半導体ヘテロ界面電場直接観察",
@@ -49,19 +62,6 @@
     "year": "2019",
     "month": "02",
     "doi": "10.2320/materia.58.102",
-    "isMainWork": false
-  },
-  {
-    "id": "48076557",
-    "title": "Quantitative electric field mapping in GaN/AlGaN heterostructures by DPC STEM",
-    "titleJa": "DPC STEMを用いたGaN系半導体ヘテロ接合界面における電場定量観察法の開発",
-    "authors": "遠山慧子,関岳人,蟹谷裕也,工藤喜弘,冨谷茂隆,幾原雄一,柴田直哉",
-    "authorsJa": "遠山慧子,関岳人,蟹谷裕也,工藤喜弘,冨谷茂隆,幾原雄一,柴田直哉",
-    "journal": "日本セラミックス協会秋季シンポジウム講演予稿集(CD-ROM)",
-    "journalJa": "日本セラミックス協会秋季シンポジウム講演予稿集(CD-ROM)",
-    "year": "2020",
-    "month": "",
-    "doi": "",
     "isMainWork": false
   },
   {
